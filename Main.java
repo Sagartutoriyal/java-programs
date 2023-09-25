@@ -5,31 +5,23 @@
 Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
-// sagar gupta
-//program#1//
-class Calci
-{   
-    private int i;
-    private int j;
-    Calci(int x,int y){
-        i=x;
-        j=y;
+Sagar gupta 
+program #5
+import java.util.*;
+public class Light{
+    boolean On;
+    void switchOn(){
+        On=true;
+        System.out.println(On);
     }
-    public void add(){
-        System.out.println("The sum of number assessed is "+(i+j));
+    void switchOff(){
+        On=false;
+        System.out.println(On);
     }
-    public void sub(){
-        System.out.println("The subraction of number assessed is "+(i-j));
-    }
-    public void mult(){
-        System.out.println("The multiplication of number assessed is "+(i*j));
+    public static void main(String[] args) {
+       Light led=new Light();
+       Light halogen=new Light();
+       led.switchOn();
+       halogen.switchOff();
     }
 }
-    public class A{
-        public static void main(String[] args){
-            Calci c=new Calci(3,4);
-            c.add();
-            c.sub();
-            c.mult();
-        }    
-    }
